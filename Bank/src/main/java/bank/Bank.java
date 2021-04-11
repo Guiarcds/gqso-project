@@ -11,8 +11,13 @@ public class Bank {
         this.saldo = value;
     }
 
-    public double saque(double value){
+    public double saque(double value) {
         setSaldo(saldo() - value);
+        return saldo();
+    }
+
+    public double deposito(double value) {
+        setSaldo(saldo() + value);
         return saldo();
     }
 }
