@@ -17,4 +17,9 @@ public class TestBank {
     public void saqueTest() {
         assertEquals(bank.saldo() - 50, bank.saque(50));
     }
+
+    @Test
+    public void depositoTest() {
+
+    }
 }
