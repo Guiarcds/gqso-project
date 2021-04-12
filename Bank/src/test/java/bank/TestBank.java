@@ -20,6 +20,6 @@ public class TestBank {
 
     @Test
     public void depositoTest() {
-        assertEquals(bank.saldo() - 50, bank.deposito(50));
+        assertEquals(bank.saldo() + 50, bank.deposito(50));
     }
 }
