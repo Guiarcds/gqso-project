@@ -3,6 +3,10 @@ package bank;
 public class Bank {
     private double saldo;
 
+    public class SaldoInsuficiente extends Exception {
+        private static final long serialVersionUID = 1L;
+    }
+
     public double saldo() {
         return this.saldo;
     }
@@ -20,4 +24,5 @@ public class Bank {
         setSaldo(saldo() + value);
         return saldo();
     }
+
 }
