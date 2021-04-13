@@ -7,6 +7,10 @@ public class Bank {
         private static final long serialVersionUID = 1L;
     }
 
+    public class InputValorNegativo extends Exception {
+        private static final long serialVersionUID = 1L;
+    }
+
     public double saldo() {
         return this.saldo;
     }
