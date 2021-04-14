@@ -10,7 +10,7 @@ public class TestBank {
     @BeforeEach
     public void setUp() {
         bank = new Bank();
-        bank.setSaldo(50);
+        bank.deposito(50);
     }
 
     @Test
