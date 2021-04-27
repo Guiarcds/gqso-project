@@ -2,8 +2,11 @@ package bank;
 
 import java.util.Scanner;
 
+import bank.Bank.InputValorNegativo;
+import bank.Bank.SaldoInsuficiente;
+
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String args[]) throws SaldoInsuficiente, InputValorNegativo {
         Bank bk = new Bank();
         Scanner in = new Scanner(System.in);
 

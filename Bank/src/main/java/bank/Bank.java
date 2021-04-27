@@ -15,11 +15,16 @@ public class Bank {
         return this.saldo;
     }
 
-    public void setSaldo(double value) {
+    private void setSaldo(double value) {
         this.saldo = value;
     }
 
-    public double saque(double value) {
+    public double saque(double value) throws SaldoInsuficiente, InputValorNegativo {
+        // if (value > saldo()) {
+        // throw new SaldoInsuficiente();
+        // } else if (value < 0) {
+        // throw new InputValorNegativo();
+        // }
         setSaldo(saldo() - value);
         return saldo();
     }
