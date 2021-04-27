@@ -20,11 +20,11 @@ public class Bank {
     }
 
     public double saque(double value) throws SaldoInsuficiente, InputValorNegativo {
-        // if (value > saldo()) {
-        // throw new SaldoInsuficiente();
-        // } else if (value < 0) {
-        // throw new InputValorNegativo();
-        // }
+        if (value > saldo()) {
+            throw new SaldoInsuficiente();
+        } else if (value < 0) {
+            throw new InputValorNegativo();
+        }
         setSaldo(saldo() - value);
         return saldo();
     }
