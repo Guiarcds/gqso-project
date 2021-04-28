@@ -30,9 +30,9 @@ public class Bank {
     }
 
     public double deposito(double value) throws InputValorNegativo {
-        // if(value < 0){
-        // throw new InputValorNegativo();
-        // }
+        if (value < 0) {
+            throw new InputValorNegativo();
+        }
         setSaldo(saldo() + value);
         return saldo();
     }
