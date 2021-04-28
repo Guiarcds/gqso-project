@@ -11,7 +11,8 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         for (;;) {
-            System.out.println("| 1) Saldo     |\n| 2) Saque     |\n| 3) Depósito  |\n| 0)  Sair     |");
+            System.out.println(
+                    "| 1) Saldo     |\n| 2) Saque     |\n| 3) Depósito  |\n| Aperte Qualquer Tecla)  Sair     |");
             int operation = in.nextInt();
             double value;
 
@@ -27,12 +28,9 @@ public class Main {
                 System.out.println("Digite o valor do Depósito:\n");
                 value = in.nextDouble();
                 bk.deposito(value);
-            }
-            if (operation == 0) {
-                System.out.println("Até a próxima!");
-                break;
             } else {
-                System.out.println("Operação Desconhecida!!!");
+                System.out.println("Até a próxima!!");
+                break;
             }
 
         }
