@@ -26,8 +26,9 @@ public class TestBank {
     }
 
     @Test
-    public void depositoTest() {
+    public void depositoTest() throws InputValorNegativo {
         assertEquals(bank.saldo() + 50, bank.deposito(50));
+        assertThrows(Bank.InputValorNegativo.class, () -> bank.deposito(-50));
     }
 
 }
