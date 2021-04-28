@@ -19,6 +19,11 @@ public class TestBank {
     }
 
     @Test
+    public void saldoTest() {
+        assertEquals(50, bank.saldo());
+    }
+
+    @Test
     public void saqueTest() throws SaldoInsuficiente, InputValorNegativo {
         assertEquals(bank.saldo() - 50, bank.saque(50));
         assertThrows(Bank.SaldoInsuficiente.class, () -> bank.saque(51));
