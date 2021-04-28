@@ -11,20 +11,16 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         for (;;) {
-            System.out.println(
-                    "| 1) Saldo     |\n| 2) Saque     |\n| 3) Depósito  |\n| Aperte Qualquer Tecla)  Sair     |");
+            System.out.println("| 1) Saldo \n| 2) Saque \n| 3) Depósito \n| Aperte qualquer outra tecla para sair");
             int operation = in.nextInt();
             double value;
-
             if (operation == 1) {
                 System.out.println("Seu Saldo é de: $" + bk.saldo() + "\n");
-            }
-            if (operation == 2) {
+            } else if (operation == 2) {
                 System.out.println("Digite o valor do Saque:\n");
                 value = in.nextDouble();
                 bk.saque(value);
-            }
-            if (operation == 3) {
+            } else if (operation == 3) {
                 System.out.println("Digite o valor do Depósito:\n");
                 value = in.nextDouble();
                 bk.deposito(value);
@@ -32,7 +28,6 @@ public class Main {
                 System.out.println("Até a próxima!!");
                 break;
             }
-
         }
 
     }
